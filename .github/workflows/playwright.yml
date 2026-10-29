@@ -11,9 +11,12 @@ jobs:
       APP_EMAIL: ${{ secrets.APP_EMAIL }}
       APP_PASSWORD: ${{ secrets.APP_PASSWORD }}
       APP_CARD_NUMBER: ${{ secrets.APP_CARD_NUMBER }}
-      APP_CARD_EXPIRY_MONTH: ${{ secrets.APP_CARD_EXPIRY_MONTH }}
-      APP_CARD_EXPIRY_YEAR: ${{ secrets.APP_CARD_EXPIRY_YEAR }}
-      APP_CARD_CVV: ${{ secrets.APP_CARD_CVV }}
+      HUB_EMAIL: ${{ secrets.HUB_EMAIL }}
+      HUB_PASSWORD: ${{ secrets.HUB_PASSWORD }}
+      HUB_TEST_EMAIL: ${{ secrets.HUB_TEST_EMAIL }}
+      RS_EMAIL: ${{ secrets.RS_EMAIL }}
+      RS_PASSWORD: ${{ secrets.RS_PASSWORD }}
+      RS_WRONG_EMAIL: ${{ secrets.RS_WRONG_EMAIL }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
